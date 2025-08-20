@@ -1,18 +1,18 @@
-## Getting Started
+## Designing A 'Playing Cat' Logic Program To Refine Conditional Implementation
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+The cats spend most of the day playing. In particular, they play if the temperature is between 25 and 35 (inclusive). Unless it is summer, then the upper limit is 45 (inclusive) instead of 35.
 
-## Folder Structure
+Write a method isCatPlaying that has 2 parameters. Method needs to return true if the cat is playing, otherwise return false
+
+1st parameter should be of type boolean and be named summer it represents if it is summer.
+2nd parameter represents the temperature and is of type int with the name temperature.
+
+## EXAMPLES OF INPUT/OUTPUT:
 
 The workspace contains two folders by default, where:
+- isCatPlaying(true, 10); should return false since temperature is not in range 25 - 45 
+- isCatPlaying(false, 36); should return false since temperature is not in range 25 - 35 (summer parameter is false)
+- isCatPlaying(false, 35); should return true since temperature is in range 25 - 35 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
